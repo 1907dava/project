@@ -1,0 +1,80 @@
+/* Styling untuk halaman */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('Img/gambar\ 1.jpg') no-repeat center center/cover; /* Gambar latar belakang */
+  color: #fff; /* Warna teks putih agar kontras */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay gelap untuk kontras */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%; /* Maksimal lebar 90% dari layar */
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Membuat elemen waktu pindah baris jika layar kecil */
+}
+
+.time {
+  background-color: rgba(255, 255, 255, 0.8); /* Kotak waktu transparan */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 auto; /* Fleksibel untuk menyesuaikan ukuran layar */
+  min-width: 100px; /* Lebar minimum untuk kotak waktu */
+}
+
+.time span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e74c3c; /* Warna merah cerah */
+}
+
+.time p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #34495e; /* Warna biru tua */
+}
+
+/* Responsive Design untuk Layar Kecil */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk layar kecil */
+  }
+
+  #countdown {
+    gap: 10px; /* Jarak antar elemen waktu lebih kecil */
+  }
+
+  .time {
+    padding: 15px; /* Padding lebih kecil */
+  }
+
+  .time span {
+    font-size: 1.5rem; /* Ukuran angka lebih kecil */
+  }
+
+  .time p {
+    font-size: 0.9rem; /* Ukuran label lebih kecil */
+  }
+}
