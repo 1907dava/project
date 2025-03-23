@@ -17,7 +17,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6); /* Overlay gelap untuk kontras */
   padding: 20px;
   border-radius: 10px;
-  max-width: 80%; /* Maksimal lebar 90% dari layar */
+  max-width: 55%; /* Maksimal lebar 90% dari layar */
   box-sizing: border-box;
 }
 
